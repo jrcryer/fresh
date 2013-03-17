@@ -17,7 +17,8 @@
 		1AF6C90516F6647E001696B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF6C90416F6647E001696B6 /* Default@2x.png */; };
 		1AF6C90716F6647E001696B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF6C90616F6647E001696B6 /* Default-568h@2x.png */; };
 		1AF6C90A16F6647E001696B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF6C90816F6647E001696B6 /* MainStoryboard.storyboard */; };
-		1AF6C90D16F6647E001696B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6C90C16F6647E001696B6 /* ViewController.m */; };
+		1AF6C91516F665BE001696B6 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6C91416F665BE001696B6 /* TweetsViewController.m */; };
+		50E05602F92541C99F7E082A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D34661CE8D4A46FCB56059F8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,10 @@
 		1AF6C90416F6647E001696B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1AF6C90616F6647E001696B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1AF6C90916F6647E001696B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1AF6C90B16F6647E001696B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1AF6C90C16F6647E001696B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1AF6C91316F665BE001696B6 /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		1AF6C91416F665BE001696B6 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
+		C7E168A1811F43A98E567C6B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		D34661CE8D4A46FCB56059F8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 				1AF6C8F116F6647E001696B6 /* UIKit.framework in Frameworks */,
 				1AF6C8F316F6647E001696B6 /* Foundation.framework in Frameworks */,
 				1AF6C8F516F6647E001696B6 /* CoreGraphics.framework in Frameworks */,
+				50E05602F92541C99F7E082A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				1AF6C8F616F6647E001696B6 /* Fresh */,
 				1AF6C8EF16F6647E001696B6 /* Frameworks */,
 				1AF6C8EE16F6647E001696B6 /* Products */,
+				C7E168A1811F43A98E567C6B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +81,7 @@
 				1AF6C8F016F6647E001696B6 /* UIKit.framework */,
 				1AF6C8F216F6647E001696B6 /* Foundation.framework */,
 				1AF6C8F416F6647E001696B6 /* CoreGraphics.framework */,
+				D34661CE8D4A46FCB56059F8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,9 +91,9 @@
 			children = (
 				1AF6C8FF16F6647E001696B6 /* AppDelegate.h */,
 				1AF6C90016F6647E001696B6 /* AppDelegate.m */,
+				1AF6C91316F665BE001696B6 /* TweetsViewController.h */,
+				1AF6C91416F665BE001696B6 /* TweetsViewController.m */,
 				1AF6C90816F6647E001696B6 /* MainStoryboard.storyboard */,
-				1AF6C90B16F6647E001696B6 /* ViewController.h */,
-				1AF6C90C16F6647E001696B6 /* ViewController.m */,
 				1AF6C8F716F6647E001696B6 /* Supporting Files */,
 			);
 			path = Fresh;
@@ -117,6 +123,7 @@
 				1AF6C8E916F6647E001696B6 /* Sources */,
 				1AF6C8EA16F6647E001696B6 /* Frameworks */,
 				1AF6C8EB16F6647E001696B6 /* Resources */,
+				8192A7B6EF98472A95AD5978 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +175,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8192A7B6EF98472A95AD5978 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1AF6C8E916F6647E001696B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -175,7 +199,7 @@
 			files = (
 				1AF6C8FD16F6647E001696B6 /* main.m in Sources */,
 				1AF6C90116F6647E001696B6 /* AppDelegate.m in Sources */,
-				1AF6C90D16F6647E001696B6 /* ViewController.m in Sources */,
+				1AF6C91516F665BE001696B6 /* TweetsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +283,7 @@
 		};
 		1AF6C91116F6647E001696B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E168A1811F43A98E567C6B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fresh/Fresh-Prefix.pch";
@@ -270,6 +295,7 @@
 		};
 		1AF6C91216F6647E001696B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E168A1811F43A98E567C6B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fresh/Fresh-Prefix.pch";
@@ -298,6 +324,7 @@
 				1AF6C91216F6647E001696B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TweetsViewController.h
 //  Fresh
 //
 //  Created by James Cryer on 17/03/2013.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TweetsViewController : UITableViewController
+
+@property (strong, nonatomic) NSArray *tweets;
 
 @end
